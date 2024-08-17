@@ -1,241 +1,234 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', 'Times New Roman';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Times New Roman";
 }
 .container {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
 }
 .nav {
-    display: flex;
-    gap: 3.5rem;
-    background: transparent;
-    height: 15vh;
-    justify-content: center;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
+  display: flex;
+  gap: 10rem;
+  background: transparent;
+  height: 15vh;
+  justify-content: center;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
 }
 .nav li {
-    list-style: none;
+  list-style: none;
 }
 .nav li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1rem;
-    color: white;
-    position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: white;
+  position: relative;
 }
-.left-container, .right-container {
-    height: 100vh;
-    display: flex;
-    align-items: center;
+.left-container,
+.right-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 .left-container {
-    background: black;
-    width: 70%;
-    padding-left: 3rem;
+  background: black;
+  width: 70%;
+  padding-left: 7rem;
 }
 .right-container {
-    background: linear-gradient(-45deg, lightpink, black 70%);
-    display: flex;
-    width: 30%;
+  background: linear-gradient(-45deg, lightpink, black 70%);
+  display: flex;
+  width: 30%;
 }
 .icons .fa-brands {
-    cursor: pointer;
-    background: linear-gradient(white, lightpink);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color:darkgray;
-    font-size: 1.7rem;
+  cursor: pointer;
+  background: linear-gradient(white, lightpink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: darkgray;
+  font-size: 1.9rem;
 }
 .icons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
 }
 .content {
-    margin-left: 4rem;
-}
-.content .intro span{
-    font-size: 1.5rem;
-    color: white;
+  margin-left: 15rem;
 }
 .content .intro {
-    font-size: 1.5rem;
-    color: white;
+  font-size: 1.7rem;
+  color: white;
 }
-.content .intro span{
-    color: lightpink;
+.content .intro {
+  font-size: 1.7rem;
+  color: white;
+}
+.content .intro {
+  color: lightpink;
 }
 .content h1 {
-    font-size: 4rem;
-    color: lightpink;
+  font-size: 4rem;
+  color: lightpink;
 }
 .content .detail {
-    font-size: 1.1rem;
-    color: white;
-    max-width: 38rem;
-    margin: 1.1rem 0 3rem 0;
-    line-height: 1.8rem;
+  font-size: 1.5rem;
+  color: white;
+  max-width: 40rem;
+  margin: 1.1rem 1rem 5rem 1rem;
+  line-height: 1.8rem;
 }
 .design .circle {
-    aspect-ratio: 1;
-    position: absolute;
-    border-radius: 50%;
-    top: 50%;
-    left: 70%;
-    transform: translate(-50%, -50%);
+  aspect-ratio: 1;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
 }
-.circle:nth-child(1){
-    background: linear-gradient(90deg, transparent 40%, black -40%);
-    width: 38rem;
+.circle:nth-child(1) {
+  background: linear-gradient(90deg, transparent 40%, black -40%);
+  width: 38rem;
 }
-.circle:nth-child(2){
-    width: 30rem;
-    background-image: url("image/profile.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border: 1rem solid;
-    box-shadow: 0 0 4rem;
+.circle:nth-child(2) {
+  width: 30rem;
+  background-image: url("image/profile.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border: 1rem solid;
+  box-shadow: 0 0 4rem;
 }
-.nav li a::after, .nav .active::after{
-    content: "";
-    position: absolute;
-    background: white;
-    width: 100%;
-    height: .1rem;
-    left: 0;
-    bottom: -5px;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform .5s;
+.nav li a::after,
+.nav .active::after {
+  content: "";
+  position: absolute;
+  background: white;
+  width: 100%;
+  height: 0.1rem;
+  left: 0;
+  bottom: -5px;
+  transform: scaleX(0);
 }
-.nav li a:hover::after .nav .active::after{
-    transform: scaleX(1);
-    transform-origin: bottom left;
+.nav li a:hover::after .nav .active::after {
+  transform: scaleX(1);
+  transform-origin: underline;
 }
 
 .info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(-45deg, lightpink, black 70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(-45deg, lightpink, black 70%);
 }
 .detail {
-    padding: 20px 30px;
-    border-radius: 10px;
-    max-width: 1500px;
-    width: 80%;
+  padding: 20px 30px;
+  border-radius: 10px;
+  max-width: 1500px;
+  width: 80%;
 }
 .sheshh {
-    margin-left: 400px;
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 30px;
-    border-bottom: 2px solid white;
-    padding-bottom: 20px;
-    color: white;
+  margin-left: 400px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  border-bottom: 2px solid white;
+  padding-bottom: 20px;
+  color: white;
 }
 .Eyyy {
-    margin-left: 400px;
-    line-height: 1.6;
-    font-family: century;
-    font-size: 30px;
-    text-align: justify;
-    color: white;
+  margin-left: 300px;
+  line-height: 1.6;
+  font-family: century;
+  font-size: 20px;
+  text-align: justify;
+  color: white;
 }
 .yati .cir {
-    aspect-ratio: 1;
-    position: absolute;
-    border-radius: 50%;
-    top: 50%;
-    left: 15%;
-    transform: translate(-50%, -50%);
+  aspect-ratio: 1;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
 }
-.cir:nth-child(1){
-    background: linear-gradient(90deg, transparent 50%, black -50%);
-    width: 38rem;
+.cir:nth-child(1) {
+  background: linear-gradient(90deg, transparent 50%, black -50%);
+  width: 38rem;
 }
-.cir:nth-child(2){
-    margin-left: 150px;
-    width: 30rem;
-    background-image: url("image/img.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
+.cir:nth-child(2) {
+  margin-left: 70px;
+  width: 30rem;
+  background-image: url("image/img.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .schools {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150%;
-    height: 100vh;
-    background: linear-gradient(-45deg, lightpink, black 70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150%;
+  height: 100vh;
+  background: linear-gradient(-45deg, lightpink, black 70%);
 }
 .school {
-    padding: 50px 00px;
-    border-radius: 10px;
-    max-width: 1400px;
-    width: 80%;
+  padding: 50px;
+  border-radius: 50px;
+  max-width: 1400px;
+  width: 80%;
 }
 .education {
-    margin-left: 10px;
-    margin-bottom: 50px;
-    text-align: center;
-    font-size: 50px;
-    border-bottom: 2px solid white;
-    padding-bottom: 30px;
-    color: white;
+  margin-left: 10px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 50px;
+  border-bottom: 2px solid white;
+  padding-bottom: 30px;
+  color: white;
 }
 .Eyyy {
-    margin-left: 400px;
-    line-height: 1.6;
-    font-family: century;
-    font-size: 30px;
-    text-align: justify;
-    color: white;
+  margin-left: 400px;
+  line-height: 1.6;
+  font-family: century;
+  font-size: 30px;
+  text-align: justify;
+  color: white;
 }
 
-
 .mema {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .ehe {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px; 
-
+  align-items: flex-start;
+  gap: 20px;
 }
-
+element.style {
+  width: 100%;
+}
 .text-content {
-    flex: 1;
-    color: white;
-    font-size: 32px;
-    font-stretch: 5000px;
-    max-width: 700px;
+  flex: 1;
+  color: white;
+  font-size: 32px;
+  max-width: 1000px;
 }
-
 .ehe img {
-    max-width: 300px;
-    width: 100%; 
-    height: auto; 
-    display: flex;
-    padding-left: 100px; 
-    margin-left: 500px;
+  max-width: 300px;
+  width: 500%;
+  height: auto;
+  display: flex;
+  position: absolute;
+  padding-left: 1px;
+  margin-left: 30%;
 }
-
-
-
-
-
